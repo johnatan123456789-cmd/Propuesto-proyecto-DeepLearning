@@ -28,7 +28,7 @@
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 0 (Propuesta) |
 | Integrante | `[nombre]` |
 | Herramienta y modelo | Claude Code · Claude Opus 5.5 |
@@ -40,13 +40,14 @@
 | Decisión | **Modificada** |
 | Justificación | El equipo cambió D1 a "hoja afectada" (sana vs ácaro o roya), D3 a 60 días y D5 a organizaciones de monitoreo fitosanitario, y pidió detallar el EDA |
 | Cómo se verificó | Revisión del equipo contra la rúbrica v1.4 |
-| Evidencia de origen | Salida literal de la IA: *"D1 · Objetivo binario: Roya (1–4) vs no roya (sana + ácaro)"* `[captura]` |
+| Evidencia de origen | Salida literal de la IA: *"D1 · Objetivo binario: Roya (1–4) vs no roya (sana + ácaro)"* `<img width="942" height="698" alt="E1 E2" src="https://github.com/user-attachments/assets/463e6b8c-bb24-47c2-a28d-26b95566b427" />
+` |
 
 ### E-2 · Afirmación no verificada sobre trabajos previos
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 0 (Propuesta §4) |
 | Celda o *commit* | `Propuesta_de_datos.md` §4 · `# E-2` |
 | Objetivo | Argumentar por qué no es un reto resuelto |
@@ -55,14 +56,15 @@
 | Decisión | **Rechazada** (la afirmación) / **Modificada** (el texto) |
 | Justificación | Era una afirmación sin búsqueda que la respaldara. Se reemplazó por la evidencia del Anexo B: los 3 notebooks de Kaggle que encontró el equipo |
 | Cómo se verificó | Búsqueda del equipo en Kaggle → 3 coincidencias (Anexo B) |
-| Evidencia de origen | Texto literal arriba (respuesta 1 de la sesión) `<img width="765" height="227" alt="E1" src="https://github.com/user-attachments/assets/b3678177-d260-4926-a3be-0bb57dd8d660" />
+| Evidencia de origen | Texto literal arriba (respuesta 1 de la sesión) `<img width="942" height="698" alt="E1 E2" src="https://github.com/user-attachments/assets/33240272-ab88-4318-bebf-dc2aa41d2fb7" />
+>
 ` |
 
 ### E-3 · Inspección del dataset descargado
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 1 |
 | Celda o *commit* | Notebook §1.2–1.3, §2.1–2.5 · `# E-3` |
 | Objetivo | Verificar la clave temporal, la estructura de las anotaciones y los duplicados |
@@ -73,39 +75,26 @@
 | Cómo se verificó | El notebook §1.3 compara JSON y XLSX: la clase multiclase coincide en el 100 % de las fotos (`assert`) |
 | Evidencia de origen | Salidas de las celdas §2.2, §2.4 y §2.5 |
 
-### E-4 · Paciencia de la parada temprana (fallo real → auditoría)
-
-| Campo | Contenido |
-|---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
-| Fase · paso | F1 · Pasos 3–4 |
-| Celda o *commit* | Notebook §10 (`PACIENCIA`), §13.1 · `# E-4` |
-| Objetivo | Configurar la parada temprana |
-| Qué devolvió la IA | `PACIENCIA = 10` |
-| Datos compartidos | Ninguno adicional |
-| Decisión | **Modificada** → `PACIENCIA = 25` |
-| Justificación | Con lote completo, una época es un solo paso de gradiente; 10 épocas detienen el entrenamiento en mesetas |
-| Cómo se verificó | Celda §13.1, en validación. Paciencia 10: AUC 0,893 y costo 79. Paciencia 25: AUC 0,942 y costo 53 |
-| Evidencia de origen | Primera ejecución: R2 y R4 detenidos en la época 57 con pérdida de validación ≈ 0,43 `[captura]` |
 
 ### E-5 · Partición desbalanceada por grupos grandes
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 1 (partición) |
 | Celda o *commit* | Notebook §6 · `# E-5` |
 | Qué devolvió la IA | Asignó los pliegues 14/3/3 por índice con `StratifiedGroupKFold(20)` |
 | Decisión | **Modificada** |
 | Justificación | La partición resultó en 64,9 / 21,5 / 13,6 % porque hay un grupo de 92 imágenes. Se eligieron los pliegues por tamaño, sin usar la etiqueta |
 | Cómo se verificó | Nueva partición: 70,0 / 14,9 / 15,1 %, con `assert` de cero grupos compartidos |
-| Evidencia de origen | Salida de la primera ejecución: `pct_imagenes` 0,649 / 0,215 / 0,136 `[captura]` |
+| Evidencia de origen | Salida de la primera ejecución: `pct_imagenes` 0,649 / 0,215 / 0,136 `<img width="725" height="102" alt="E5" src="https://github.com/user-attachments/assets/942b6b82-d101-406d-bbc4-34d2854f3d18" />
+` |
 
 ### E-6 · Auditoría inducida de la partición por imagen
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 6 |
 | Celda o *commit* | Notebook §13.2 · `# E-6` |
 | Qué devolvió la IA | La celda reproducible que compara la partición ingenua con la agrupada |
@@ -114,24 +103,12 @@
 | Cómo se verificó | Misma semilla y misma regla de umbral; ver `resultados.json → auditoria` |
 | Evidencia de origen | Salida de la celda §13.2 |
 
-### E-7 · Rasgo exactamente colineal
-
-| Campo | Contenido |
-|---|---|
-| Fecha y hora | 2026-11-04 `[hh:mm]` |
-| Fase · paso | F1 · Paso 1 (rasgos) |
-| Celda o *commit* | Notebook §3, §4.3 · `# E-7` |
-| Qué devolvió la IA | El conjunto inicial de rasgos incluía a la vez `pct_verde` y `pct_lesion = 1 − pct_verde` |
-| Decisión | **Modificada** |
-| Justificación | El VIF salía infinito por construcción. Se excluyó `pct_verde` de X (27 rasgos en el modelo; se mantiene en el EDA) |
-| Cómo se verificó | Tras el cambio, el VIF máximo es finito (notebook §4.3) |
-| Evidencia de origen | Salida: `pct_verde inf · pct_lesion inf` en la tabla de VIF de la primera ejecución `[captura]` |
 
 ### E-8 · Simplificación del notebook y exploración inicial
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | 2026-11-05 `[hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Pasos 1–2 |
 | Celda o *commit* | Notebook completo (§1–§3 rehechas) · `# E-8` |
 | Objetivo | Que el flujo empiece por cómo vienen los datos y explique qué variables se agregan y por qué |
@@ -139,13 +116,14 @@
 | Decisión | **Modificada** a pedido del equipo |
 | Justificación | El EDA debe partir de los datos crudos. Ahora muestra 12 cultivos, 390 plantas, 1.560 fotos, unas 780 hojas inferidas, el balance 791/769 y la tabla de variables iniciales antes de construir los rasgos |
 | Cómo se verificó | Ejecución completa desde cero sin errores. Las métricas finales son idénticas a las de la versión anterior (R3a, umbral 0,22, costo 54, AUC 0,936) |
-| Evidencia de origen | Solicitud del equipo en la sesión del 2026-11-05 `[captura]` |
+| Evidencia de origen | Solicitud del equipo en la sesión del 2026-11-05 `<img width="800" height="354" alt="E8" src="https://github.com/user-attachments/assets/89cdc6d3-057f-471f-ba36-46817e776dfe" />
+` |
 
 ### E-9 · Eliminar duplicados (rechazada)
 
 | Campo | Contenido |
 |---|---|
-| Fecha y hora | `[AAAA-MM-DD hh:mm]` |
+| Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 1 (datos) |
 | Celda o *commit* | Notebook §2.5 y §5.2 · `# E-9` |
 | Qué devolvió la IA | Identificar los duplicados de las imágenes y eliminarlos para evitar posibles fugas byte a byte |
@@ -153,21 +131,11 @@
 | Decisión | **Rechazada** |
 | Justificación | Con datos tabulares no es recomendable eliminar duplicados. La comparación de filas no reconoce el contexto ni las vecindades, como sí se hace en las imágenes, y es potencialmente riesgoso eliminar registros que no son realmente duplicados. Además, 27 de los 67 grupos de copias exactas tienen clases distintas |
 | Cómo se verificó | El notebook conserva las 1.560 fotos. Los duplicados solo se usan para agrupar la partición (`assert` en §6) |
-| Evidencia de origen | `[Captura con la salida literal de la IA, fecha y herramienta]` |
+| Evidencia de origen | `<img width="669" height="88" alt="E9" src="https://github.com/user-attachments/assets/d24b00b0-3834-4ad3-9d13-cdb9aa25b4da" />
+`
+<img width="681" height="96" alt="E9 -2" src="https://github.com/user-attachments/assets/84233e23-3089-47e4-93dd-5906b84839cb" />
+|
 
-### E-10 · Partición por hoja en lugar de por planta (modificada)
-
-| Campo | Contenido |
-|---|---|
-| Fecha y hora | `[AAAA-MM-DD hh:mm]` |
-| Fase · paso | F1 · Paso 1 (partición) |
-| Celda o *commit* | Notebook §6 y §13.2 · `# E-10` |
-| Qué devolvió la IA | Partir los datos por hoja o foto: `train_test_split(..., stratify=y)` |
-| Datos compartidos | Esquema (sin datos personales) |
-| Decisión | **Modificada** → partición agrupada por planta |
-| Justificación | Cada planta aporta 4 fotos (2 hojas × 2 caras). Partir por hoja deja en prueba plantas que el modelo ya vio en entrenamiento |
-| Cómo se verificó | Celda §13.2: con la partición por hoja, el 99,1 % de las fotos de prueba tiene una hermana en entrenamiento y 20 son copias exactas. Con la partición por planta: 0 (`assert` en §6) |
-| Evidencia de origen | `[Captura con la salida literal de la IA, fecha y herramienta]` |
 
 ## 4. Auditoría a la IA
 
