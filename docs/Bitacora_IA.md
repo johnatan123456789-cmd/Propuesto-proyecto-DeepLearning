@@ -55,7 +55,8 @@
 | Decisión | **Rechazada** (la afirmación) / **Modificada** (el texto) |
 | Justificación | Era una afirmación sin búsqueda que la respaldara. Se reemplazó por la evidencia del Anexo B: los 3 notebooks de Kaggle que encontró el equipo |
 | Cómo se verificó | Búsqueda del equipo en Kaggle → 3 coincidencias (Anexo B) |
-| Evidencia de origen | Texto literal arriba (respuesta 1 de la sesión) `[<img width="765" height="227" alt="E1" src="https://github.com/user-attachments/assets/87cacf29-fc62-4a57-96c7-61054d5435da" />]` |
+| Evidencia de origen | Texto literal arriba (respuesta 1 de la sesión) `<img width="765" height="227" alt="E1" src="https://github.com/user-attachments/assets/b3678177-d260-4926-a3be-0bb57dd8d660" />
+` |
 
 ### E-3 · Inspección del dataset descargado
 
