@@ -127,5 +127,5 @@
 | Justificación | Con datos tabulares no es recomendable eliminar duplicados. La comparación de filas no reconoce el contexto ni las vecindades, como sí se hace en las imágenes, y es potencialmente riesgoso eliminar registros que no son realmente duplicados. Además, 27 de los 67 grupos de copias exactas tienen clases distintas |
 | Cómo se verificó | El notebook conserva las 1.560 fotos. Los duplicados solo se usan para agrupar la partición (`assert` en §6) |
 | Evidencia de origen | <img width="669" height="88" alt="E9" src="https://github.com/user-attachments/assets/d24b00b0-3834-4ad3-9d13-cdb9aa25b4da" />
-| Solicitud del cambio | <img width="721" height="230" alt="E9 -2" src="https://github.com/user-attachments/assets/a54faa77-699a-4a3c-8f39-11da95676fc9" />>
+| Solicitud del cambio | <img width="721" height="230" alt="E9 -2" src="https://github.com/user-attachments/assets/a54faa77-699a-4a3c-8f39-11da95676fc9" />
 
