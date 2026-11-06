@@ -76,7 +76,7 @@
 | Evidencia de origen | Salidas de las celdas §2.2, §2.4 y §2.5 |
 
 
-### E-5 · Partición desbalanceada por grupos grandes
+### E-4 · Partición desbalanceada por grupos grandes
 
 | Campo | Contenido |
 |---|---|
@@ -90,7 +90,7 @@
 | Evidencia de origen | Salida de la primera ejecución: `pct_imagenes` 0,649 / 0,215 / 0,136 `<img width="725" height="102" alt="E5" src="https://github.com/user-attachments/assets/942b6b82-d101-406d-bbc4-34d2854f3d18" />
 ` |
 
-### E-6 · Auditoría inducida de la partición por imagen
+### E-5 · Auditoría inducida de la partición por imagen
 
 | Campo | Contenido |
 |---|---|
@@ -104,7 +104,7 @@
 | Evidencia de origen | Salida de la celda §13.2 |
 
 
-### E-8 · Simplificación del notebook y exploración inicial
+### E-6 · Simplificación del notebook y exploración inicial
 
 | Campo | Contenido |
 |---|---|
@@ -119,7 +119,7 @@
 | Evidencia de origen | Solicitud del equipo en la sesión del 2026-11-05 `<img width="800" height="354" alt="E8" src="https://github.com/user-attachments/assets/89cdc6d3-057f-471f-ba36-46817e776dfe" />
 ` |
 
-### E-9 · Eliminar duplicados (rechazada)
+### E-7 · Eliminar duplicados (rechazada)
 
 | Campo | Contenido |
 |---|---|
@@ -135,18 +135,3 @@
 `
 <img width="681" height="96" alt="E9 -2" src="https://github.com/user-attachments/assets/84233e23-3089-47e4-93dd-5906b84839cb" />
 |
-
-
-## 4. Auditoría a la IA
-
-Ver [Auditoria_IA.md](Auditoria_IA.md). Casos documentados:
-- E-9, rechazada: eliminar duplicados.
-- E-10, modificada: partición por hoja → por planta. La reproduce la celda §13.2, registrada en E-6.
-- E-4, modificada: paciencia de 10 → 25, fallo real reproducido con métrica en §13.1.
-
-## 5. Reparto propuesto para la sustentación
-
-`[A definir por el equipo]`. Sugerencia:
-- Integrante 1: datos, exploración, variables y partición (§1–§7).
-- Integrante 2: MLP, bucle y regularización (§8–§10).
-- Integrante 3: métricas, umbral, ética y auditoría (§11–§13).
