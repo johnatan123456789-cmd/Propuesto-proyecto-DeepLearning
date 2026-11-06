@@ -13,6 +13,8 @@ Rengifo-Lozano, D., & Sánchez-Flores, J. (2026). *Image dataset of healthy and 
 ## 2. Hallazgo
 
 Contactamos a los autores para conocer la ubicación de captura de las imágenes. Respondieron que las fotografías se tomaron en las provincias de **Tocache, Huallaga y Rioja** (Perú). Sin embargo, **ninguna imagen registra su ubicación**, así que no se puede saber en cuál de las tres provincias se tomó cada fotografía.
+<img width="1535" height="812" alt="RV_ Duda sobre el dataset de cacao de Mendeley _ Proyecto académico" src="https://github.com/user-attachments/assets/ee583c45-5afb-4080-b76e-14f532915ed6" />
+
 
 ## 3. Por qué el hallazgo descalifica el dataset para el proyecto
 
