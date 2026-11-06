@@ -20,7 +20,7 @@
 
 - **Partes redactadas sin IA:** `[completar: p. ej., la decisión de las D1–D5, el contacto con los autores del dataset de cacao, la búsqueda en Kaggle]`.
 - **Datos compartidos con la IA:** el asistente ejecutó código local sobre `data/raw/`. Vio nombres de archivo, conteos, la estructura de columnas y valores de ejemplo de las anotaciones (polígonos y URL de Labelbox). **Los valores de `Created By` se omitieron explícitamente** en todas las inspecciones y nunca se mostraron. No hay datos personales en las imágenes.
-- **Firmas:** `[cada integrante, con fecha]`.
+
 
 ## 3. Registro de interacciones
 
@@ -30,7 +30,6 @@
 |---|---|
 | Fecha | 2026-11-04 |
 | Fase · paso | F1 · Paso 0 (Propuesta) |
-| Integrante | `[nombre]` |
 | Herramienta y modelo | Claude Code · Claude Opus 5.5 |
 | Celda o *commit* | `README.md`, `Propuesta_de_datos.md`, `docs/flujo_logico_fase1.md` · `# E-1` |
 | Objetivo | Documentar el cambio de dataset (cacao → RoCoLe) y proponer el flujo de la Fase 1 |
@@ -127,6 +126,6 @@
 | Decisión | **Rechazada** |
 | Justificación | Con datos tabulares no es recomendable eliminar duplicados. La comparación de filas no reconoce el contexto ni las vecindades, como sí se hace en las imágenes, y es potencialmente riesgoso eliminar registros que no son realmente duplicados. Además, 27 de los 67 grupos de copias exactas tienen clases distintas |
 | Cómo se verificó | El notebook conserva las 1.560 fotos. Los duplicados solo se usan para agrupar la partición (`assert` en §6) |
-| Evidencia de origen | `<img width="669" height="88" alt="E9" src="https://github.com/user-attachments/assets/d24b00b0-3834-4ad3-9d13-cdb9aa25b4da" />
-|<img width="721" height="230" alt="E9 -2" src="https://github.com/user-attachments/assets/3906b5ce-7212-4dd5-8881-793984190058" />|
+| Evidencia de origen | <img width="669" height="88" alt="E9" src="https://github.com/user-attachments/assets/d24b00b0-3834-4ad3-9d13-cdb9aa25b4da" />
+| Solicitud del cambio | <img width="721" height="230" alt="E9 -2" src="https://github.com/user-attachments/assets/a54faa77-699a-4a3c-8f39-11da95676fc9" />>
 
