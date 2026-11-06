@@ -40,8 +40,7 @@
 | Decisión | **Modificada** |
 | Justificación | El equipo cambió D1 a "hoja afectada" (sana vs ácaro o roya), D3 a 60 días y D5 a organizaciones de monitoreo fitosanitario, y pidió detallar el EDA |
 | Cómo se verificó | Revisión del equipo contra la rúbrica v1.4 |
-| Evidencia de origen | Salida literal de la IA: *"D1 · Objetivo binario: Roya (1–4) vs no roya (sana + ácaro)"* `<img width="942" height="698" alt="E1 E2" src="https://github.com/user-attachments/assets/463e6b8c-bb24-47c2-a28d-26b95566b427" />
-` |
+| Evidencia de origen | Salida literal de la IA: *"D1 · Objetivo binario: Roya (1–4) vs no roya (sana + ácaro)"* `<img width="942" height="698" alt="E1 E2" src="https://github.com/user-attachments/assets/463e6b8c-bb24-47c2-a28d-26b95566b427" /> |
 
 ### E-2 · Afirmación no verificada sobre trabajos previos
 
@@ -57,8 +56,7 @@
 | Justificación | Era una afirmación sin búsqueda que la respaldara. Se reemplazó por la evidencia del Anexo B: los 3 notebooks de Kaggle que encontró el equipo |
 | Cómo se verificó | Búsqueda del equipo en Kaggle → 3 coincidencias (Anexo B) |
 | Evidencia de origen | Texto literal arriba (respuesta 1 de la sesión) `<img width="942" height="698" alt="E1 E2" src="https://github.com/user-attachments/assets/33240272-ab88-4318-bebf-dc2aa41d2fb7" />
->
-` |
+>|
 
 ### E-3 · Inspección del dataset descargado
 
@@ -87,8 +85,7 @@
 | Decisión | **Modificada** |
 | Justificación | La partición resultó en 64,9 / 21,5 / 13,6 % porque hay un grupo de 92 imágenes. Se eligieron los pliegues por tamaño, sin usar la etiqueta |
 | Cómo se verificó | Nueva partición: 70,0 / 14,9 / 15,1 %, con `assert` de cero grupos compartidos |
-| Evidencia de origen | Salida de la primera ejecución: `pct_imagenes` 0,649 / 0,215 / 0,136 `<img width="725" height="102" alt="E5" src="https://github.com/user-attachments/assets/942b6b82-d101-406d-bbc4-34d2854f3d18" />
-` |
+| Evidencia de origen | Salida de la primera ejecución: `pct_imagenes` 0,649 / 0,215 / 0,136 `<img width="725" height="102" alt="E5" src="https://github.com/user-attachments/assets/942b6b82-d101-406d-bbc4-34d2854f3d18" /> |
 
 ### E-5 · Auditoría inducida de la partición por imagen
 
@@ -116,8 +113,7 @@
 | Decisión | **Modificada** a pedido del equipo |
 | Justificación | El EDA debe partir de los datos crudos. Ahora muestra 12 cultivos, 390 plantas, 1.560 fotos, unas 780 hojas inferidas, el balance 791/769 y la tabla de variables iniciales antes de construir los rasgos |
 | Cómo se verificó | Ejecución completa desde cero sin errores. Las métricas finales son idénticas a las de la versión anterior (R3a, umbral 0,22, costo 54, AUC 0,936) |
-| Evidencia de origen | Solicitud del equipo en la sesión del 2026-11-05 `<img width="800" height="354" alt="E8" src="https://github.com/user-attachments/assets/89cdc6d3-057f-471f-ba36-46817e776dfe" />
-` |
+| Evidencia de origen | Solicitud del equipo en la sesión del 2026-11-05 `<img width="800" height="354" alt="E8" src="https://github.com/user-attachments/assets/89cdc6d3-057f-471f-ba36-46817e776dfe" /> |
 
 ### E-7 · Eliminar duplicados (rechazada)
 
@@ -132,6 +128,5 @@
 | Justificación | Con datos tabulares no es recomendable eliminar duplicados. La comparación de filas no reconoce el contexto ni las vecindades, como sí se hace en las imágenes, y es potencialmente riesgoso eliminar registros que no son realmente duplicados. Además, 27 de los 67 grupos de copias exactas tienen clases distintas |
 | Cómo se verificó | El notebook conserva las 1.560 fotos. Los duplicados solo se usan para agrupar la partición (`assert` en §6) |
 | Evidencia de origen | `<img width="669" height="88" alt="E9" src="https://github.com/user-attachments/assets/d24b00b0-3834-4ad3-9d13-cdb9aa25b4da" />
-`
-<img width="681" height="96" alt="E9 -2" src="https://github.com/user-attachments/assets/84233e23-3089-47e4-93dd-5906b84839cb" />
-|
+|<img width="721" height="230" alt="E9 -2" src="https://github.com/user-attachments/assets/3906b5ce-7212-4dd5-8881-793984190058" />|
+
