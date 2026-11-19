@@ -1,6 +1,6 @@
 # Bitácora de IA · Proyecto Centinela · Fase 2
 
-> **Nota para el equipo.** Esta bitácora la redactó el asistente a partir de lo ocurrido en las sesiones del 2026-11-11 y del 2026-11-12. Revísenla, completen los campos `[ ]` (hora, integrante, captura) y **confirmen o cambien cada decisión**: deben poder defenderlas en la sustentación. La numeración continúa la de la Fase 1 (E-1 a E-7).
+> **Nota.** La numeración continúa la de la Fase 1 (E-1 a E-7).
 
 ## 1. Datos de la entrega
 
@@ -9,7 +9,7 @@
 | Integrantes | Briyith Lisdey Herrera Cruz · Juan Pablo Becerra Tirano · Johnatan Vélez Martínez |
 | Proyecto | Centinela del Café · Fase 2 (CNN + LSTM/GRU + fusión) |
 | Identificador inicial | E-8 |
-| Fecha de entrega | `[AAAA-MM-DD]` |
+| Fecha de entrega | `[2026-11-14]` |
 
 ## 2. Declaración de uso
 
@@ -18,7 +18,7 @@
 | Claude Code (aplicación de escritorio, Anthropic) | Claude Opus 5.5 | Leer la actividad, diseñar las tres ramas, escribir y ejecutar el notebook, el informe, el tablero y esta bitácora |
 
 - **Datos compartidos:** el asistente ejecutó código local sobre RoCoLe (imágenes de hojas, sin personas) y NASA POWER (clima público). El campo `Created By` no se usa.
-- **Partes hechas sin IA:** `[completar]`.
+
 
 ## 3. Registro de interacciones
 
@@ -26,7 +26,8 @@
 
 | ID | Qué propuso o devolvió la IA | Decisión | Justificación |
 |---|---|---|---|
-| **E-8** | Detectó que la actividad dice: *"Ese escenario queda vetado como entrega… no supera la compuerta de la Propuesta de Datos"*, y **recomendó consultar al docente antes de construir** | **Rechazada** (se continuó) | La Fase 1 se construyó sobre RoCoLe. El equipo decidió diferenciar el problema (3 clases, pronóstico de humedad, alineación medida y permutación) y declarar el riesgo |
+| **E-8** | Detectó que la actividad dice: *"Ese escenario queda vetado como entrega… no supera la compuerta de la Propuesta de Datos"*, y **recomendó consultar al docente antes de construir** | **Rechazada** (se continuó) | La Fase 1 se construyó sobre RoCoLe. El equipo decidió diferenciar el problema (3 clases, pronóstico de humedad, alineación medida y permutación) y declarar el riesgo <img width="766" height="274" alt="E8" src="https://github.com/user-attachments/assets/6a1ed621-7f4a-4112-94c1-b50d6689055d" />
+|
 | **E-9** | Agrupar las 6 clases en 3: sana / ácaro rojo / roya (niveles 1–4) | **Aceptada** | La actividad pide al menos 3 categorías. Los niveles 3 y 4 de roya tienen 62 y 30 fotos |
 | **E-10** | Entregar a la CNN la hoja recortada con su caja anotada, no la foto completa | **Aceptada con limitación** | El fondo trae otras hojas, a veces enfermas. En campo hará falta una foto centrada o un detector |
 | **E-11** | Comparar ResNet50 y EfficientNet-B0 en *feature extraction* y hacer *fine-tuning* parcial de EfficientNet-B0 | **Aceptada** | El *fine-tuning* subió el F1 macro de validación a 0,711, frente a 0,665 y 0,647 de las redes congeladas |
