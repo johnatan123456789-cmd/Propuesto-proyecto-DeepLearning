@@ -68,7 +68,7 @@
 
 ## 5. Firmas
 
-| Integrante | Declaro que revisé y entiendo cada decisión | Fecha |
+| Integrante | | Fecha |
 |---|---|---|
 | Briyith Lisdey Herrera Cruz | | `[2026-11-14]` |
 | Juan Pablo Becerra Tirano | | `[2026-11-14]` |
