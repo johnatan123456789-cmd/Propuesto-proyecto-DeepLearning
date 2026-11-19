@@ -9,7 +9,7 @@
 | Integrantes | Briyith Lisdey Herrera Cruz · Juan Pablo Becerra Tirano · Johnatan Vélez Martínez |
 | Proyecto | Centinela del Café · Fase 2 (CNN + LSTM/GRU + fusión) |
 | Identificador inicial | E-8 |
-| Fecha de entrega | `[AAAA-MM-DD]` |
+| Fecha de entrega | `[2026-11-14]` |
 
 ## 2. Declaración de uso
 
@@ -18,7 +18,7 @@
 | Claude Code (aplicación de escritorio, Anthropic) | Claude Opus 5.5 | Leer la actividad, diseñar las tres ramas, escribir y ejecutar el notebook, el informe, el tablero y esta bitácora |
 
 - **Datos compartidos:** el asistente ejecutó código local sobre RoCoLe (imágenes de hojas, sin personas) y NASA POWER (clima público). El campo `Created By` no se usa.
-- **Partes hechas sin IA:** `[completar]`.
+
 
 ## 3. Registro de interacciones
 
@@ -74,6 +74,6 @@
 
 | Integrante | Declaro que revisé y entiendo cada decisión | Fecha |
 |---|---|---|
-| Briyith Lisdey Herrera Cruz | `[firma]` | `[AAAA-MM-DD]` |
-| Juan Pablo Becerra Tirano | `[firma]` | `[AAAA-MM-DD]` |
-| Johnatan Vélez Martínez | `[firma]` | `[AAAA-MM-DD]` |
+| Briyith Lisdey Herrera Cruz | | `[2026-11-14]` |
+| Juan Pablo Becerra Tirano | | `[2026-11-14]` |
+| Johnatan Vélez Martínez | | `[2026-11-14]` |
