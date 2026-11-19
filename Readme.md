@@ -19,12 +19,16 @@ Contactamos a los autores para conocer la ubicación de captura. Nos dieron una 
 Por eso **cambiamos al dataset RoCoLe** (Parraga-Alava et al., 2019), [doi:10.17632/c5yvn32dzg.2](https://doi.org/10.17632/c5yvn32dzg.2). Sus fotos vienen de **un único sitio georreferenciado**: CIIDEA, ESPAM MFL, Calceta, Manabí, Ecuador (lat −0,834206; lon −80,177159). Además, cada imagen conserva su **fecha de captura en el EXIF**. El detalle está en [docs/justificacion_cambio_dataset.md](docs/justificacion_cambio_dataset.md).
 
 ## Descripción
-
+ 
 | Fase | Contenido | Estado |
 |---|---|---|
 | Propuesta de Datos | [Propuesta_de_datos.md](Propuesta_de_datos.md) (v2, RoCoLe) | Enviada a compuerta |
 | **Fase 1** | MLP en PyTorch sobre 27 rasgos tabulares extraídos de cada hoja. En prueba: *recall* de la clase afectada 0,975 y AUC 0,936. El notebook es [notebooks/Centinela_Fase1.ipynb](notebooks/Centinela_Fase1.ipynb) y el informe [informe/Informe_Fase1.pdf](informe/Informe_Fase1.pdf) | Desarrollada |
-| Fase 2 | CNN (imagen) + LSTM/GRU (60 días de NASA POWER) + fusión | Pendiente |
+| **Fase 2** | Rama A: EfficientNet-B0 con *fine-tuning* parcial (3 clases: sana / ácaro rojo / roya) + Grad-CAM. Rama B: RNN, LSTM y GRU para pronosticar la humedad relativa a 1 día (18 años de NASA POWER). Rama C: fusión tardía con ablación. Notebook: [notebooks/Centinela_Fase2.ipynb](notebooks/Centinela_Fase2.ipynb). Informe: [informe/Informe_Fase2.pdf](informe/Informe_Fase2.pdf). Guía: [docs/Fase2_guia_que_pide_y_solucion.md](docs/Fase2_guia_que_pide_y_solucion.md). Pesos: `modelos/fase2/`. Tablero del técnico: `resultados/fase2/tablero_tecnico.html` (doble clic) | Desarrollada |
+| Fase 3 | Industrialización: GPU, precisión mixta, exportación (LiteRT / API REST) | Pendiente |
+ 
+tiene menú contextual
+Briyith Lisdey Herrera Cruz está escribiendo
 
 **Objetivo binario:** `afectada = 1` si la hoja tiene ácaro rojo o roya de cualquier nivel, y `0` si está sana. El cliente son las organizaciones de monitoreo fitosanitario, a través de sus técnicos de sanidad vegetal.
 
