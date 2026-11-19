@@ -70,6 +70,6 @@
 
 | Integrante | Declaro que revisé y entiendo cada decisión | Fecha |
 |---|---|---|
-| Briyith Lisdey Herrera Cruz | `[firma]` | `[AAAA-MM-DD]` |
-| Juan Pablo Becerra Tirano | `[firma]` | `[AAAA-MM-DD]` |
-| Johnatan Vélez Martínez | `[firma]` | `[AAAA-MM-DD]` |
+| Briyith Lisdey Herrera Cruz | | `[2026-11-14]` |
+| Juan Pablo Becerra Tirano | | `[2026-11-14]` |
+| Johnatan Vélez Martínez | | `[2026-11-14]` |
