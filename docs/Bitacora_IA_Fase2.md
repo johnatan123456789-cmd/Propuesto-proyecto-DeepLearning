@@ -69,7 +69,7 @@
 ## 5. Firmas
 
 | Integrante | | Fecha |
-|---|---|---|
+|---||---|
 | Briyith Lisdey Herrera Cruz | | `[2026-11-14]` |
 | Juan Pablo Becerra Tirano | | `[2026-11-14]` |
 | Johnatan Vélez Martínez | | `[2026-11-14]` |
