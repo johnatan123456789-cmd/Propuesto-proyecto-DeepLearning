@@ -27,8 +27,6 @@ Por eso **cambiamos al dataset RoCoLe** (Parraga-Alava et al., 2019), [doi:10.17
 | **Fase 2** | Rama A: EfficientNet-B0 con *fine-tuning* parcial (3 clases: sana / ácaro rojo / roya) + Grad-CAM. Rama B: RNN, LSTM y GRU para pronosticar la humedad relativa a 1 día (18 años de NASA POWER). Rama C: fusión tardía con ablación. Notebook: [notebooks/Centinela_Fase2.ipynb](notebooks/Centinela_Fase2.ipynb). Informe: [informe/Informe_Fase2.pdf](informe/Informe_Fase2.pdf). Guía: [docs/Fase2_guia_que_pide_y_solucion.md](docs/Fase2_guia_que_pide_y_solucion.md). Pesos: `modelos/fase2/`. Tablero del técnico: `resultados/fase2/tablero_tecnico.html` (doble clic) | Desarrollada |
 | Fase 3 | Industrialización: GPU, precisión mixta, exportación (LiteRT / API REST) | Pendiente |
  
-tiene menú contextual
-Briyith Lisdey Herrera Cruz está escribiendo
 
 **Objetivo binario:** `afectada = 1` si la hoja tiene ácaro rojo o roya de cualquier nivel, y `0` si está sana. El cliente son las organizaciones de monitoreo fitosanitario, a través de sus técnicos de sanidad vegetal.
 
