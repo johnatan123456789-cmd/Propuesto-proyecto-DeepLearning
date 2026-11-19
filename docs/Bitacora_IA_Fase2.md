@@ -1,6 +1,6 @@
 # Bitácora de IA · Proyecto Centinela · Fase 2
 
-> **Nota para el equipo.** Esta bitácora la redactó el asistente a partir de lo ocurrido en las sesiones del 2026-11-11 y del 2026-11-12. Revísenla, completen los campos `[ ]` (hora, integrante, captura) y **confirmen o cambien cada decisión**: deben poder defenderlas en la sustentación. La numeración continúa la de la Fase 1 (E-1 a E-7).
+> **Nota** La numeración continúa la de la Fase 1 (E-1 a E-7).
 
 ## 1. Datos de la entrega
 
